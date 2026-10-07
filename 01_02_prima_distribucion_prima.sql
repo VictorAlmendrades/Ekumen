@@ -214,7 +214,7 @@ WITH periodo AS (
                     per.fec_inicio,
                     p.agrupacion_n1,
                     p.agrupacion_n2,
-                    p.agrupacion_n3
+                    p.agrupacion_n3,
                 ORDER BY pr.id_poliza, pr.id_certificado
                 ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS porc_nivel_12,
         SUM(pr.mnt_usd) OVER (
