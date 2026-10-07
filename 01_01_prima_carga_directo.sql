@@ -16,7 +16,7 @@
 ################################################################################
 */
 DECLARE periodo_inicio DATE DEFAULT DATE_SUB('{periodo_inicio}', INTERVAL 11 MONTH);
-DECLARE periodo_fin DATE DEFAULT '{periodo_fin}';
+DECLARE periodo_fin DATE DEFAULT '{periodo_fin}'; ##19
 DECLARE erp_periodo_corte DATE DEFAULT '{erp_periodo_corte}';
 DECLARE v_periodo DATE DEFAULT DATE_TRUNC(CURRENT_DATE('America/Lima'), MONTH);
 
